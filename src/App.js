@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Provider } from 'react-redux';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+
+import Login from './pages/Login/Login';
+import DashBoard from './pages/Dashboard/Dashboard';
+import configureStore from './redux/store/index';
+import { APPLICATION_CONSTANTS } from './AppConstant';
+
+const store  = configureStore({});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+		<Router>
+			<Provider store={store}>
+			<Routes>
+				<Route exact path={APPLICATION_CONSTANTS.HOME_PAGE_URL} element={<Login />} />
+				<Route exact path={APPLICATION_CONSTANTS.DASHBOARD_URL} element ={<DashBoard />} />
+			</Routes>
+			</Provider>
+		</Router>
   );
 }
 

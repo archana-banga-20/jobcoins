@@ -1,0 +1,22 @@
+.detailTransaction{
+	margin-top: -20px;
+}
+
+.detailTransaction > p {
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.transactionTableWrap{
+	margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  font-size: 16px;
+}
+
+
+td {
+  font-size: 14px;
+}

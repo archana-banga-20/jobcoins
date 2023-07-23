@@ -1,0 +1,55 @@
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	z-index: 1;
+}
+
+.modalWrap{
+	position: relative;
+}
+
+
+.modalContent{
+	width: 500px;
+	background-color: #fff;
+	padding: 10px 15px;
+}
+
+.detailTransactionTable {
+	width: 550px;
+	height: 400px;
+	overflow-y: scroll;
+}
+
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,29 @@
+.sendWidget{
+
+}
+
+.sendWrap{
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.sendWrap > button{
+	width: 20%;
+	height: 10%;
+	padding: 5px;
+}
+
+.heading{
+	display: flex;
+	justify-content: center;
+	/* font-size: 16px; */
+}
+
+.inputWrap{
+	display: flex;
+	justify-content: space-between;
+}
+.inputElements > input{
+	padding: 5px 30px
+}

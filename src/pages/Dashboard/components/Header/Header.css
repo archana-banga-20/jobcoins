@@ -1,0 +1,26 @@
+.header{
+	padding: 10px 170px;
+	background-color: rgb(20, 20, 20);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+
+.leftHeader{
+	width: 40%;
+	justify-content: flex-start;
+}
+
+.rightHeader{
+	display: flex;
+	width: 60%;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+.rightHeader > li {
+	padding: 15px;
+}
